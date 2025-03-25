@@ -740,6 +740,64 @@ header {
   box-shadow: 0 8px 20px rgba(155, 89, 182, 0.6);
 }
 
+/* ===== SITEMAP STYLES ===== */
+.sitemap-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+.sitemap-list {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.sitemap-item {
+  margin-bottom: var(--space-md);
+  padding: var(--space-sm);
+  border-left: 3px solid var(--dsotm-purple);
+  transition: all 0.3s ease;
+}
+
+.sitemap-item:hover {
+  border-left-color: var(--dsotm-cyan);
+}
+
+.sitemap-link {
+  font-weight: bold;
+  color: var(--dsotm-cyan);
+  display: block;
+  padding: var(--space-xs) 0;
+}
+
+.sitemap-category {
+  font-family: var(--font-heading);
+  color: var(--wywh-orange);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.sitemap-sublist {
+  list-style: none;
+  margin-left: var(--space-lg);
+  padding-left: var(--space-md);
+  border-left: 1px dashed rgba(155, 89, 182, 0.3);
+}
+
+.sitemap-sublist li {
+  padding: var(--space-xs) 0;
+  color: rgba(255,255,255,0.8);
+}
+
+.sitemap-sublist a {
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+.sitemap-sublist a:hover {
+  color: var(--dsotm-cyan);
+}
+
 /* ===== FOOTER STYLES ===== */
 footer {
   background: linear-gradient(to right, var(--dark-gray), var(--black));
