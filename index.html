@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" class="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink Floyd - Official Discography</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Side Navigation -->
@@ -27,10 +27,10 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div id="main">
         <!-- Header -->
         <header>
-            <span class="menu-icon" onclick="openNav()">&#9776; Menu</span>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
             <h1 class="logo">Pink Floyd</h1>
         </header>
 
@@ -47,13 +47,12 @@
         <section id="albums" class="content-section">
             <div class="section-header">
                 <h2>Studio Albums</h2>
-                <div class="divider"></div>
                 <p>Fifteen groundbreaking releases from 1967 to 2014</p>
             </div>
 
             <div class="album-grid">
                 <!-- Dark Side of the Moon -->
-                <a href="dsoth.html" class="album-card dsotm">
+                <a href="dsoth.html" class="album-card">
                     <div class="album-image">
                         <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="Dark Side of the Moon">
                     </div>
@@ -69,9 +68,9 @@
                 </a>
 
                 <!-- Wish You Were Here -->
-                <a href="wywh.html" class="album-card wywh">
+                <a href="wywh.html" class="album-card">
                     <div class="album-image">
-                        <img src="cd-wywm.webp" alt="Wish You Were Here">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Wish_You_Were_Here_%28Pink_Floyd%29_-_cover_art.jpg" alt="Wish You Were Here">
                     </div>
                     <div class="album-info">
                         <h3>Wish You Were Here</h3>
@@ -85,7 +84,7 @@
                 </a>
 
                 <!-- Animals -->
-                <a href="animals.html" class="album-card animals">
+                <a href="animals.html" class="album-card">
                     <div class="album-image">
                         <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Pink_Floyd-Animals-Frontal.jpg" alt="Animals">
                     </div>
@@ -101,9 +100,9 @@
                 </a>
 
                 <!-- The Wall -->
-                <a href="wall.html" class="album-card wall">
+                <a href="wall.html" class="album-card">
                     <div class="album-image">
-                        <img src="the wall.jpg" alt="The Wall">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Pink_Floyd_-_WallCoverOriginal.jpg" alt="The Wall">
                     </div>
                     <div class="album-info">
                         <h3>The Wall</h3>
@@ -118,52 +117,6 @@
             </div>
         </section>
 
-        <!-- Featured Products Section -->
-        <section class="content-section dark-bg">
-            <div class="section-header">
-                <h2>Featured Store Items</h2>
-                <div class="divider"></div>
-                <p>Popular vinyl and merchandise available now</p>
-            </div>
-
-            <div class="featured-products">
-                <div class="product-card">
-                    <img src="vinyl_dsotm.png"DSOTM Vinyl">
-                    <h3>Dark Side 50th Anniversary Vinyl</h3>
-                    <p class="price">€100.00</p>
-                    <a href="store.html#dsotm" class="cta-button">View in Store</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="vinly-wywm.jpg" alt="WYWH Vinyl">
-                    <h3>Wish You Were Here Vinyl</h3>
-                    <p class="price">€27.00</p>
-                    <a href="store.html#wywh" class="cta-button">View in Store</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="vinyl-animals.jpg" alt="Animals Vinyl">
-                    <h3>Animals 2018 Remix Vinyl</h3>
-                    <p class="price">€36.00</p>
-                    <a href="store.html#animals" class="cta-button">View in Store</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="content-section">
-            <div class="newsletter">
-                <div class="newsletter-content">
-                    <h2>Stay Updated</h2>
-                    <p>Subscribe to our newsletter for news and exclusive offers</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="cta-button">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
         <!-- Footer -->
         <footer>
             <div class="footer-content">
@@ -175,7 +128,7 @@
                     <a href="#">Privacy Policy</a>
                 </div>
                 <div class="social-links">
-                    <a href="https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=a1ly5iPaRH2eMmwCaasw3A" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a href="https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9" target="_blank"><i class="fab fa-spotify"></i></a>
                     <a href="https://www.youtube.com/channel/UCY2qt3dw2TQJxvBrDiYGHdQ" target="_blank"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.instagram.com/pinkfloyd/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
@@ -186,14 +139,6 @@
         </footer>
     </div>
 
-    <script src="js/script.js"></script>
-    <script>
-        // Newsletter form handling
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for subscribing! This is a demo form.');
-            this.reset();
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
