@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="contact">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pink Floyd</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Pink Floyd Albums</h3>
+        <a href="index.html">Home</a>
+        <a href="dsoth.html">Dark Side of the Moon</a>
+        <a href="wywh.html">Wish You Were Here</a>
+        <a href="animals.html">Animals</a>
+        <a href="wall.html">The Wall</a>
+        <div class="nav-footer">
+            <a href="store.html">Store</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <span class="menu-icon" onclick="openNav()">&#9776; Menu</span>
+            <h1 class="logo">Pink Floyd</h1>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with the Pink Floyd team</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="content-section">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="store">Store Question</option>
+                            <option value="media">Media Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="cta-button">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Us</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p>info@pinkfloyd.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <h4>Phone</h4>
+                            <p>+44 20 8877 8888</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Address</h4>
+                            <p>Pink Floyd Ltd<br>123 Abbey Road<br>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">Pink Floyd</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="store.html">Store</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=a1ly5iPaRH2eMmwCaasw3A" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.youtube.com/channel/UCY2qt3dw2TQJxvBrDiYGHdQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/pinkfloyd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pink Floyd Music Ltd. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Simple form handling (non-functional demo)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form. In a real implementation, this would send your message to our team.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Floyd - Official Discography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Pink Floyd Albums</h3>
+        <a href="index.html" class="active">Home</a>
+        <a href="dsoth.html">Dark Side of the Moon</a>
+        <a href="wywh.html">Wish You Were Here</a>
+        <a href="animals.html">Animals</a>
+        <a href="wall.html">The Wall</a>
+        <div class="nav-footer">
+            <a href="store.html">Store</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <span class="menu-icon" onclick="openNav()">&#9776; Menu</span>
+            <h1 class="logo">Pink Floyd</h1>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pink Floyd Discography</h1>
+                <p>Explore the legendary progressive rock albums that defined a generation</p>
+                <a href="#albums" class="cta-button">View Albums</a>
+            </div>
+        </section>
+
+        <!-- Featured Albums Section -->
+        <section id="albums" class="content-section">
+            <div class="section-header">
+                <h2>Studio Albums</h2>
+                <div class="divider"></div>
+                <p>Fifteen groundbreaking releases from 1967 to 2014</p>
+            </div>
+
+            <div class="album-grid">
+                <!-- Dark Side of the Moon -->
+                <a href="dsoth.html" class="album-card dsotm">
+                    <div class="album-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png" alt="Dark Side of the Moon">
+                    </div>
+                    <div class="album-info">
+                        <h3>The Dark Side of the Moon</h3>
+                        <p class="album-year">1973</p>
+                        <p class="album-desc">The progressive rock masterpiece featuring "Money" and "Time"</p>
+                        <div class="album-stats">
+                            <span><i class="fas fa-chart-line"></i> 45M+ sold</span>
+                            <span><i class="fas fa-clock"></i> 42:50</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Wish You Were Here -->
+                <a href="wywh.html" class="album-card wywh">
+                    <div class="album-image">
+                        <img src="cd-wywm.webp" alt="Wish You Were Here">
+                    </div>
+                    <div class="album-info">
+                        <h3>Wish You Were Here</h3>
+                        <p class="album-year">1975</p>
+                        <p class="album-desc">Tribute to Syd Barrett with "Shine On You Crazy Diamond"</p>
+                        <div class="album-stats">
+                            <span><i class="fas fa-chart-line"></i> 20M+ sold</span>
+                            <span><i class="fas fa-clock"></i> 44:28</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Animals -->
+                <a href="animals.html" class="album-card animals">
+                    <div class="album-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Pink_Floyd-Animals-Frontal.jpg" alt="Animals">
+                    </div>
+                    <div class="album-info">
+                        <h3>Animals</h3>
+                        <p class="album-year">1977</p>
+                        <p class="album-desc">Political commentary with "Dogs" and "Pigs"</p>
+                        <div class="album-stats">
+                            <span><i class="fas fa-chart-line"></i> 10M+ sold</span>
+                            <span><i class="fas fa-clock"></i> 41:51</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- The Wall -->
+                <a href="wall.html" class="album-card wall">
+                    <div class="album-image">
+                        <img src="the wall.jpg" alt="The Wall">
+                    </div>
+                    <div class="album-info">
+                        <h3>The Wall</h3>
+                        <p class="album-year">1979</p>
+                        <p class="album-desc">Rock opera featuring "Comfortably Numb"</p>
+                        <div class="album-stats">
+                            <span><i class="fas fa-chart-line"></i> 30M+ sold</span>
+                            <span><i class="fas fa-clock"></i> 81:20</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="content-section dark-bg">
+            <div class="section-header">
+                <h2>Featured Store Items</h2>
+                <div class="divider"></div>
+                <p>Popular vinyl and merchandise available now</p>
+            </div>
+
+            <div class="featured-products">
+                <div class="product-card">
+                    <img src="vinyl_dsotm.png"DSOTM Vinyl">
+                    <h3>Dark Side 50th Anniversary Vinyl</h3>
+                    <p class="price">€100.00</p>
+                    <a href="store.html#dsotm" class="cta-button">View in Store</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="vinly-wywm.jpg" alt="WYWH Vinyl">
+                    <h3>Wish You Were Here Vinyl</h3>
+                    <p class="price">€27.00</p>
+                    <a href="store.html#wywh" class="cta-button">View in Store</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="vinyl-animals.jpg" alt="Animals Vinyl">
+                    <h3>Animals 2018 Remix Vinyl</h3>
+                    <p class="price">€36.00</p>
+                    <a href="store.html#animals" class="cta-button">View in Store</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="content-section">
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for news and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="cta-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">Pink Floyd</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="store.html">Store</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=a1ly5iPaRH2eMmwCaasw3A" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.youtube.com/channel/UCY2qt3dw2TQJxvBrDiYGHdQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/pinkfloyd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pink Floyd Music Ltd. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! This is a demo form.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
